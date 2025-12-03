@@ -20,6 +20,9 @@ app.use('/teste', teste)
 import aluno from './routes/aluno.js'
 app.use('/aluno', aluno)
 
+import curso from './routes/cursos.js'
+app.use('/cursos', curso)
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`)
 })
