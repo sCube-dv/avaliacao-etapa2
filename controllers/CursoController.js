@@ -39,7 +39,7 @@ class CursoController{
     excluir = async function (req, res){
         try{
             const id = req.params.id;
-            const cursos = await Curso.findByPk(id)
+            const curso = await Curso.findByPk(id)
             await curso.update({status: 0})
             res.status(201).json({message: 'Curso removida com sucesso!'})
         }catch(err){
