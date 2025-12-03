@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
 import teste from './routes/teste.js'
 app.use('/teste', teste)
 
-app.listen(porta, () => {
-  console.log(`Servidor rodando em http://localhost:${porta}`)
+import aluno from './routes/aluno.js'
+app.use('/aluno', aluno)
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`)
 })
