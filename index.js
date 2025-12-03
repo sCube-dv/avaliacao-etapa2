@@ -18,7 +18,7 @@ import teste from './routes/teste.js'
 app.use('/teste', teste)
 
 import aluno from './routes/aluno.js'
-app.use('/aluno', aluno)
+app.use('/alunos', aluno)
 
 import curso from './routes/cursos.js'
 app.use('/cursos', curso)
